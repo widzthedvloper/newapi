@@ -23,8 +23,8 @@
 
 ![endpoint](./api-v1-users-id-foods-id-ingredients.png)
 
-> keep in mind that i am just showing the 
-end points i use myself. Make sure you 
+> keep in mind that i am just showing the
+end points i used myself. Make sure you
 run `rails routes` in your terminal to see more routes.
 
 ## Prerequisites
