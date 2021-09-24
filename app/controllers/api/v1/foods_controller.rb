@@ -5,37 +5,29 @@ class Api::V1::FoodsController < ApplicationController
   def index
     @foods = Food.all
 
-    render json: @foods
+    json_response(@foods)
   end
 
   # GET /foods/1
   def show
-    render json: @food
+    json_response(@food)
   end
 
   # POST /foods
   def create
-    @food = Food.new(food_params)
-
-    if @food.save
-      render json: @food, status: :created, location: @food
-    else
-      render json: @food.errors, status: :unprocessable_entity
-    end
+    @food = Food.create!(food_params)
   end
 
   # PATCH/PUT /foods/1
   def update
-    if @food.update(food_params)
-      render json: @food
-    else
-      render json: @food.errors, status: :unprocessable_entity
-    end
+    @food.update(food_params)
+    head :no_content
   end
 
   # DELETE /foods/1
   def destroy
     @food.destroy
+    head :no_content
   end
 
   private
@@ -47,6 +39,6 @@ class Api::V1::FoodsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def food_params
-    params.require(:food).permit(:name, :created_by)
+    params.permit(:name, :created_by)
   end
 end
