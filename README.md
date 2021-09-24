@@ -9,6 +9,12 @@
    <img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white">
 </p>
 
+## End Points
+
+### api/v1/users
+
+[](./api-v1-users)
+
 ## Prerequisites
 
 - Ruby 3.0.0
