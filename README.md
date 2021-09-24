@@ -13,14 +13,16 @@
 
 ### (domain-name)/api/v1/users
 
-![](./api-v1-users.png)
+![endpoint](./api-v1-users.png)
 
 ### (domain-name)/api/v1/users/:id/foods
 
-![](./api-v1-users-id-foods.png)
+![endpoint](./api-v1-users-id-foods.png)
+
 ### (domain-name)/api/v1/users/:id/foods/:id/ingredients
 
-![](./api-v1-users-id-foods-id-ingredients.png)
+![endpoint](./api-v1-users-id-foods-id-ingredients.png)
+
 ## Prerequisites
 
 - Ruby 3.0.0
