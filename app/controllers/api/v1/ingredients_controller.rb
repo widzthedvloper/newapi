@@ -5,37 +5,30 @@ class Api::V1::IngredientsController < ApplicationController
   def index
     @ingredients = Ingredient.all
 
-    render json: @ingredients
+    json_response(@ingredients)
   end
 
   # GET /ingredients/1
   def show
-    render json: @ingredient
+    json_response(@ingredient)
   end
 
   # POST /ingredients
   def create
-    @ingredient = Ingredient.new(ingredient_params)
-
-    if @ingredient.save
-      render json: @ingredient, status: :created, location: @ingredient
-    else
-      render json: @ingredient.errors, status: :unprocessable_entity
-    end
+    @ingredient = Ingredient.create!(ingredient_params)
+    json_response(@ingredient, :created)
   end
 
   # PATCH/PUT /ingredients/1
   def update
-    if @ingredient.update(ingredient_params)
-      render json: @ingredient
-    else
-      render json: @ingredient.errors, status: :unprocessable_entity
-    end
+    @ingredient.update(ingredient_params)
+    head :no_content
   end
 
   # DELETE /ingredients/1
   def destroy
     @ingredient.destroy
+    head :no_content
   end
 
   private
@@ -47,6 +40,6 @@ class Api::V1::IngredientsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def ingredient_params
-    params.require(:ingredient).permit(:name, :calories, :food_id)
+    params.permit(:name, :calories, :food_id)
   end
 end
