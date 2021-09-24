@@ -33,6 +33,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
 end
 
+group :test do
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'shoulda-matchers', '~> 5.0'
+end
 group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
