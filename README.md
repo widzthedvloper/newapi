@@ -13,7 +13,7 @@
 
 ### api/v1/users
 
-[](./api-v1-users)
+![](./api-v1-users)
 
 ## Prerequisites
 
