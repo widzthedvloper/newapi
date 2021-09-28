@@ -39,6 +39,6 @@ class Api::V1::FoodsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def food_params
-    params.permit(:name, :created_by)
+    params.permit(:name, :user_id)
   end
 end
