@@ -16,6 +16,7 @@ class Api::V1::FoodsController < ApplicationController
   # POST /foods
   def create
     @food = Food.create!(food_params)
+    json_response(@food, :created)
   end
 
   # PATCH/PUT /foods/1
