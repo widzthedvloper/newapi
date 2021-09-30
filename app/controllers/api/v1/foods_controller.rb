@@ -3,8 +3,7 @@ class Api::V1::FoodsController < ApplicationController
 
   # GET /foods
   def index
-    user = User.find_by(id: params[:id])
-    @foods = Food.find_by(user_id: user.id)
+    @foods = Food.all
 
     json_response(@foods)
   end
