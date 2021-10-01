@@ -12,7 +12,11 @@ class IngredientsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should create ingredient' do
     assert_difference('Ingredient.count') do
-      post ingredients_url, params: { ingredient: { calories: @ingredient.calories, food_id: @ingredient.food_id, name: @ingredient.name } }, as: :json
+      post ingredients_url, params: { 
+        ingredient: { 
+          calories: @ingredient.calories, food_id: @ingredient.food_id, name: @ingredient.name 
+        } 
+      }, as: :json
     end
 
     assert_response 201
@@ -24,7 +28,11 @@ class IngredientsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update ingredient' do
-    patch ingredient_url(@ingredient), params: { ingredient: { calories: @ingredient.calories, food_id: @ingredient.food_id, name: @ingredient.name } }, as: :json
+    patch ingredient_url(@ingredient), params: { 
+      ingredient: { 
+        calories: @ingredient.calories, food_id: @ingredient.food_id, name: @ingredient.name 
+      } 
+    }, as: :json
     assert_response 200
   end
 
