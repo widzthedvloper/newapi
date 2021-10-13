@@ -23,8 +23,8 @@
 
 ![endpoint](./api-v1-users-id-foods-id-ingredients.png)
 
-> keep in mind that i am just showing the
-end points i used myself. Make sure you
+> keep in mind that I am just showing the
+endpoints I used myself. Make sure you
 run `rails routes` in your terminal to see more routes.
 
 ## Prerequisites
@@ -38,8 +38,9 @@ run `rails routes` in your terminal to see more routes.
 1. Clone the repository by using the `git clone git@github.com:widzthedvloper/newapi.git` command in your terminal
 2. `cd` into the cloned repository
 3. Run `bundle install`
-4. Run `rails s` to run the app in a local server
-5. Open the the folder in the code editer of your choice :)
+4. Run `rails s` to run the app on a local server
+5. Open the folder in the code editor of your choice :)
+6. run `bundle exec rspec` to run the tests
 
 ## Contributing
 
