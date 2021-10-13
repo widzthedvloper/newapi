@@ -45,7 +45,7 @@ RSpec.configure do |config|
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
 # The settings below are suggested to provide a good initial experience
-# with RSpec, but feel free to customize to your heart's content.
+  # with RSpec, but feel free to customize to your heart's content.
   # This allows you to limit a spec run to individual examples or groups
   # you care about by tagging them with `:focus` metadata. When nothing
   # is tagged with `:focus`, all examples get run. RSpec also provides
@@ -68,18 +68,17 @@ RSpec.configure do |config|
   # Many RSpec users commonly either run the entire suite or an individual
   # file, and it's useful to allow more verbose output when running an
   # individual spec file.
-  # if config.files_to_run.one?
+    # if config.files_to_run.one?
     # Use the documentation formatter for detailed output,
     # unless a formatter has already been configured
     # (e.g. via a command-line flag).
-    # config.default_formatter = "doc"
+  # config.default_formatter = "doc"
   # end
 
   # Print the 10 slowest examples and example groups at the
   # end of the spec run, to help surface which specs are running
   # particularly slow.
-  #bconfig.profile_examples = 10
-
+  # bconfig.profile_examples = 10
 
   # Run specs in random order to surface order dependencies. If you find an
   # order dependency and want to debug it, you can fix the order by providing
